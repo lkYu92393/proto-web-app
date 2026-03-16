@@ -1,6 +1,6 @@
-import './login.css';
+import './login-page.css';
 
-class LoginPage extends HTMLElement {
+customElements.define('login-page', class LoginPage extends HTMLElement {
     constructor() {
         super();
         this.setAttribute("warn", "");
@@ -31,6 +31,4 @@ class LoginPage extends HTMLElement {
                 break;
         }
     }
-}
-
-export { LoginPage };
+})
